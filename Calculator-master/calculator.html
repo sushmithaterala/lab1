@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel="stylesheet" href="G:\htmls\Calculator\calculator.css">
+</head>
+<body>
+<div align="center">
+<table border="1">
+    <thead>Calculator</thead>
+    <tr>
+			<td class="size"> <label for="input1" class="labelSize">Input 1</label></td>
+			<td class="size"><input type="number" id="input1" value="0" class="labelSize"></td>
+			<td class="buttonsize"><input type="button" value="+" id="add" onclick="add()" </td>
+			<td class="buttonsize"><input type="button" value="-" id="subtraction" onclick="subtract()"></td>
+    </tr>
+	<tr>
+            <td class="size"><label for="input2" class="labelSize">Input 2</label></td>
+            <td class="size"><input type="number" id="input2" value="0" class="labelSize"></td>
+			<td class="buttonsize"><input type="button" value="*" id="multiplication" onclick="multiply()"></td>
+			<td class="buttonsize"><input type="button" value="/" id="division" onclick="division()"></td>
+    </tr>
+    <tr>
+           <td class="size"> <label for="output"> output</label></td>
+           <td class="size"> <input  id="output"></td>
+		   <td class="buttonsize" colspan="2"><button id="scientific" onclick="scientific()">Scientific</button></td>
+			
+    </tr>
+</table>
+<table border="1">
+		<thead>Scientific</thead>
+		<tr>
+		<td rowspan="2"><input type="text" id="scientificInput" width="100px" height="100px" style="
+    padding-top: 10px;
+    padding-bottom: 10px;
+"></td>
+		<td class="buttonsize" colspan="2"><button id="scientific" onclick="sin()">sin</button></td>
+		<td class="buttonsize" colspan="2"><button id="scientific" onclick="cos()">cos</button></td>
+		</tr>
+		<tr>
+		<td class="buttonsize" colspan="2"><button id="scientific" onclick="tan()">tan</button></td>
+		<td class="buttonsize" colspan="2"><button id="scientific" onclick="sqrt()">Sqrt()</button></td>
+		</tr>
+		
+</table>
+<button id="reset" onclick="reset()">Clear</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
